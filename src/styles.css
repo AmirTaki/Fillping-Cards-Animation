@@ -62,11 +62,13 @@ h1 {
 
 
 .panels li:not(:hover) div.front{
-    animation: tw-re  2s   linear forwards reverse;
+    animation: twirl-repeat  2s   linear forwards reverse ;
 }
 .panels li:not(:hover) div.back{
-    animation: tw-re  2s   linear forwards ;
+    animation: twirl-repeat  2s   linear forwards ;
 }
+
+
 
 @keyframes twirl {
     0% {
@@ -80,15 +82,15 @@ h1 {
     }
 }
 
-@keyframes tw-re {
+@keyframes twirl-repeat{
     0% {
-        transform: rotateY(90deg);
+        transform: rotateY(0deg);
     }
     50%{
         transform: rotateY(45deg);
     }
     100% {
-        transform: rotateY(0deg);
+        transform: rotateY(90deg);
     }
     
 }
