@@ -52,20 +52,20 @@ h1 {
 }
 
 .panels li:hover div.front{
-    animation: twirl 2s   ease-in forwards;
+    animation: twirl 2s   linear forwards;
 }
 
 
 .panels li:hover div.back{
-    animation: twirl 2s  ease-out forwards reverse;
+    animation: twirl 2s  linear forwards reverse;
 }
 
 
 .panels li:not(:hover) div.front{
-    animation: tw-re  2s   ease-out forwards reverse;
+    animation: tw-re  2s   linear forwards reverse;
 }
 .panels li:not(:hover) div.back{
-    animation: tw-re  2s   ease-in forwards ;
+    animation: tw-re  2s   linear forwards ;
 }
 
 @keyframes twirl {
